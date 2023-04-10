@@ -2,24 +2,17 @@ import React from 'react';
 
 const Blog = () => {
     return (
-
         <div>
             <div className="bg-indigo-100">
 				<div className="main-container flex flex-col lg:flex-row gap-x-10 items-center justify-between">
 					{/* Text Content */}
-					<div className="py-10 mx-auto lg:mb-0">
-						<div className="pb-12 lg:mt-8">
-							<h2 className="mx-auto font-sans font-bold tracking-normal text-gray-900 text-4xl lg:text-5xl sm:leading-none lg:leading-tight px-3">
-							Blog
-							</h2>
-							
-						</div>
-						
-					</div>
-					
+                    <div className="pb-20 lg:mt-8 py-10 mx-auto lg:mb-0">
+                        <h2 className="mx-auto font-sans font-bold tracking-normal text-gray-900 text-4xl lg:text-5xl sm:leading-none lg:leading-tight px-3">
+                        Blog
+                        </h2>
+                    </div>
 				</div>
 			</div>
-
         
             <div>
                 <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
