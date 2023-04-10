@@ -6,9 +6,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Statistics from './components/Statistics/Statistics';
-import AppliedJobs from './components/AppliedJobs/AppliedJobs';
-import Blog from './components/Blog/Blog';
+import Statistics from './components/Statistics';
+import AppliedJobs from './components/AppliedJobs';
+import Blog from './components/Blog';
 
 const router = createBrowserRouter([
   {

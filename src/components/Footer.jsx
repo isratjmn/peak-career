@@ -1,5 +1,5 @@
 import React from "react";
-import socialIcons from '../../images/icons/socialIcons.png';
+import socialIcons from '../images/icons/socialIcons.png';
 
 const Footer = () => {
 	return (
