@@ -8,19 +8,32 @@ const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
-		<div className="bg-zinc-200 container-fluid px-4 py-6 mx-auto md:px-24 lg:px-18 lg:py-6">
+		<div className="bg-indigo-100 container-fluid px-4 py-6 mx-auto md:px-24 lg:px-18 lg:py-6">
 			<nav className="relative flex items-center justify-between">
+
 				{/* Logo Section */}
 				<Link to="/" className="inline-flex items-center">
 					<span className="ml-2 text-2xl text-indigo-600 font-bold tracking-wide">
 						peakCareer
 					</span>
 				</Link>
+
 				{/* Nav Item Section */}
 				<ul className="items-center hidden space-x-8 lg:flex font-bold">
 					<li>
 						<NavLink
 							to="/"
+							title="Home"
+							className={({ isActive }) =>
+								isActive ? "active" : "default"
+							}
+						>
+							Home
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							to="statistics"
 							title="Statistics"
 							className={({ isActive }) =>
 								isActive ? "active" : "default"

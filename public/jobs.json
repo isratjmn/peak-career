@@ -5,90 +5,104 @@
         "companyName": "Acme Corp",
         "companyLogo": "https://i.ibb.co/fDwfJ48/acmeCorp.png",
         "jobTitle": "Software Engineer",
-        "jobType": "Remote",
+        "jobType": ["Remote", "Full-Time"],
         "location": "San Francisco, CA",
         "salary": "$120,000 - $150,000",
         "description": "We are looking for a skilled software engineer to join our team and help us develop our next-generation products.",
         "responsibility": "Design, develop, and maintain high-quality software using agile methodologies.",
         "requirements": "Bachelor's degree in Computer Science or related field, 5+ years of experience with Java or Python, experience with distributed systems, and strong problem-solving skills.",
         "experience": "5+ years",
-        "phoneNumber": "(555) 123-4567",
-        "emailAddress": "jobs@acmecorp.com"
+        "contactInformation": {
+            "phoneNumber": "(555) 123-4567",
+            "email": "careers@acmecorp.com"
+        }
     },
     {
         "id": 1002,
         "companyName": "Cognitech Inc.",
         "companyLogo": "https://i.ibb.co/phBPPF0/cogni-Tech.jpg",
         "jobTitle": "Data Scientist",
-        "jobType": "Full-Time",
+        "jobType": ["Remote", "Full-Time"],
         "location": "Boston, MA",
         "salary": "$100,000 - $130,000",
         "description": "We are looking for a data scientist to join our team and help us develop machine learning models to solve complex problems.",
         "responsibility": "Develop and implement machine learning models, analyze and interpret large data sets.",
         "requirements": "Master's degree in Computer Science or related field, 3+ years of experience in data science, experience with Python and SQL, and strong problem-solving and communication skills.",
         "experience": "3+ years",
-        "phoneNumber": "(555) 345-6789",
-        "emailAddress": "careers@cognitechinc.com"
+        "contactInformation": {
+            "phoneNumber": "(555) 345-6789",
+            "email": "careers@cognitechinc.com"
+        }
+        
     },
     {
         "id": 1003,
         "companyName": "Netflix",
         "companyLogo": "https://i.ibb.co/tZSM6d2/netflix-4-1.png",
         "jobTitle": "Marketing Manager",
-        "jobType": "Remote",
+        "jobType": ["Remote", "Full-Time"],
         "location": "New York, NY",
         "salary": "$90,000 - $110,000",
         "description": "We are seeking an experienced marketing manager to lead our marketing team and drive growth for our products.",
         "responsibility": "Develop and execute marketing strategies across multiple channels, manage a team of marketing specialists.",
         "requirements": "Bachelor's degree in Marketing or related field, 7+ years of experience in marketing, 3+ years of experience in a management role, and strong analytical and communication skills.",
         "experience": "7+ years",
-        "phoneNumber": "(555) 234-5678",
-        "emailAddress": "jobs@baxterco.com"
+        "contactInformation": {
+            "phoneNumber": "(555) 234-5678",
+            "email": "jobs@netflix.com"
+        }
+
     },
     {
         "id": 1004,
         "companyName": "EcoGlobe Inc.",
         "companyLogo": "https://i.ibb.co/bd1PCbn/ecoGlobe.jpg",
         "jobTitle": "Environmental Scientist",
-        "jobType": "Full-Time",
+        "jobType": ["Remote", "Full-Time"],
         "location": "Denver, CO",
         "salary": "$70,000 - $90,000",
         "description": "We are seeking an environmental scientist to join our team and help us develop and implement sustainable practices.",
         "responsibility": "Conduct research and analysis on environmental issues, develop and implement sustainable practices.",
         "requirements": "Bachelor's or Master's degree in Environmental Science or related field, 3+ years of experience in environmental science or related field, knowledge of federal and state regulations, and strong analytical and communication skills.",
         "experience": "3+ years",
-        "phoneNumber": "(555) 456-7890",
-        "emailAddress": "careers@ecoglobeinc.com"
+        "contactInformation": {
+            "phoneNumber": "(555) 456-7890",
+            "email": "careers@ecoglobeinc.com"
+        }
     },
     {
         "id": 1005,
         "companyName": "FutureTech",
         "companyLogo": "https://i.ibb.co/L8F7Qpz/future-Tech.png",
         "jobTitle": "UX Designer",
-        "jobType": "Remote",
+        "jobType": ["Remote", "Full-Time"],
         "location": "Austin, TX",
         "salary": "$90,000 - $120,000",
         "description": "We are seeking a UX designer to join our team and help us design user-centric digital products.",
         "responsibility": "Design user interfaces, conduct user research and testing, collaborate with cross-functional teams.",
         "requirements": "Bachelor's or Master's degree in Design, Human-Computer Interaction or related field, 5+ years of experience in UX design, proficiency in design software such as Sketch, Figma, or Adobe Creative Suite, and strong problem-solving and communication skills.",
         "experience": "5+ years",
-        "phoneNumber": "(555) 567-8901",
-        "emailAddress": "careers@futuretech.com"
+        "contactInformation": {
+            "phoneNumber": "(555) 567-8901",
+            "email": "careers@futuretech.com"
+        }
     },
     {
         "id": 1006,
         "companyName": "Global Ventures",
         "companyLogo": "https://example.com/globalventures-logo.png",
         "jobTitle": "Financial Analyst",
-        "jobType": "Full-Time",
+        "jobType": ["Remote", "Full-Time"],
         "location": "Chicago, IL",
         "salary": "$80,000 - $100,000",
         "description": "We are seeking a financial analyst to join our team and help us make strategic business decisions.",
         "responsibility": "Analyze financial data, develop financial models, prepare financial reports.",
         "requirements": "Bachelor's or Master's degree in Finance, Accounting or related field, 3+ years of experience in financial analysis or related field, proficiency in financial software and tools, and strong analytical and communication skills.",
         "experience": "3+ years",
-        "phoneNumber": "(555) 678-9012",
-        "emailAddress": "careers@globalventures.com"
+        "contactInformation": {
+            "phoneNumber": "(555) 678-9012",
+            "email": "careers@globalventures.com"
+        }
     }
     
 ]

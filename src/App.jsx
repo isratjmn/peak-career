@@ -12,8 +12,6 @@ const App = () => {
 			<div>
 				<Outlet/>
 			</div>
-			<CategoryList/>
-			<Featurejobs/>
 			<Footer/>
 		</div>
 	);
