@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import socialIcons from "../images/icons/socialIcons.png";
+import jobSearch from '../images/icons/jobSearch.png';
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 
@@ -13,9 +14,8 @@ const Header = () => {
 
 				{/* Logo Section */}
 				<Link to="/" className="inline-flex items-center">
-					<span className="ml-2 text-2xl text-indigo-600 font-bold tracking-wide">
-						peakCareer
-					</span>
+					<figure><img className="w-12" src={jobSearch} alt="logo" /></figure>
+					<h1 class="font-extrabold text-3xl">Work<span class="text-indigo-700">Hive</span></h1>
 				</Link>
 
 				{/* Nav Item Section */}
