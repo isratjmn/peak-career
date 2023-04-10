@@ -7,9 +7,6 @@
 .main-container {
     @apply mx-auto w-full md:w-[70%] lg:w-[80%]
 }
-/* .main-container {
-    @apply  sm:max-w-xl lg:max-w-full md:px-24 lg:px-8 lg:py-8
-} */
 .active {
     @apply font-medium tracking-wide text-indigo-600 transition-colors duration-200 hover:text-cyan-600
 }

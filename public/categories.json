@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"image": "https://i.ibb.co/1JZHcT1/accounting.png",
+		"name": "Accounting/Finance",
+		"jobs_available": 237
+	},
+	{
+		"id": 2,
+		"image": "https://i.ibb.co/2Mjbsrg/budget.png",
+		"name": "Marketing",
+		"jobs_available": 123
+	},
+	{
+		"id": 3,
+		"image": "https://i.ibb.co/gSkRZrW/technology.png",
+		"name": "IT/Technology",
+		"jobs_available": 342
+	},
+	{
+		"id": 4,
+		"image": "https://i.ibb.co/GJRF8FQ/lecture.png",
+		"name": "Education/Training",
+		"jobs_available": 94
+	}
+]

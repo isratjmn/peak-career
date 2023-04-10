@@ -5,11 +5,10 @@ import bannerImg from '../images/photo/bannerImg.png';
 const Statistics = () => {
 	return (
 		<div className="bg-zinc-200">
-			<div className=" bg-zinc-200 main-container flex flex-col lg:flex-row gap-x-10 items-center justify-between">
+			<div className="main-container flex flex-col lg:flex-row gap-x-10 items-center justify-between">
 				{/* Text Content */}
 				<div className="mb-10 lg:mb-0">
 					<div className="mb-6 lg:mt-8">
-						
 						<h2 className="max-w-lg mb-6 font-sans font-bold tracking-normal text-gray-900 text-4xl lg:text-6xl sm:leading-none lg:leading-tight px-3">
 						One Step <br /> Closer To Your <br className="hidden md:block" />{" "}
 							<span className="inline-block text-indigo-600">Dream Job</span>
