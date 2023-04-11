@@ -12,9 +12,9 @@ const Home = () => {
 					{/* Text Content */}
 					<div className="mb-10 lg:mb-0">
 						<div className="mb-6 lg:mt-8">
-							<h2 className="max-w-lg pt-20 mb-6 font-sans font-bold tracking-normal text-gray-900 text-4xl lg:text-6xl sm:leading-none lg:leading-tight px-3">
-							One Step <br /> Closer To Your <br className="hidden md:block" />{" "}
-								<span className="inline-block text-indigo-600">Dream Job</span>
+							<h2 className="max-w-lg pt-20 mb-6 font-sans font-bold tracking-normal text-gray-900 text-4xl lg:text-[46px] sm:leading-none lg:leading-tight px-3">
+							Your Gateway <br /> to a Brighter Future: <br className="hidden md:block" />{" "}
+								<span className="inline-block text-indigo-600">With A Dream Job</span>
 							</h2>
 							<p className="text-xl lg:text-lg text-gray-800 px-3">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
 						</div>

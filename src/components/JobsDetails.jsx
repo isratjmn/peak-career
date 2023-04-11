@@ -7,7 +7,6 @@ import SingleJob from "./SingleJob";
 const JobsDetails = () => {
 	const {id}  = useParams();
     const [jobs, setJobs] = useState([]);
-
     useEffect(() => {
         fetch('/jobs.json')
 			.then((res) => res.json())

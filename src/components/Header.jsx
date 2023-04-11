@@ -116,7 +116,7 @@ const Header = () => {
 											title="Close Menu"
 											onClick={() => setIsNavOpen(false)}
 										>
-											<XMarkIcon className="w-5 text-gray-600" />
+										<XMarkIcon className="w-5 text-gray-600" />
 										</button>
 									</div>
 								</div>
