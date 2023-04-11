@@ -1,12 +1,24 @@
 import React from "react";
 import socialIcons from '../images/icons/socialIcons.png';
+import jobSearch from "../images/icons/jobSearch.png";
 
 const Footer = () => {
 	return (
 		<footer className="bg-gray-900 text-white divide-y">
             <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:px-8 py-16 container-fluid px-4 mx-auto md:px-24 lg:px-18 lg:py-20">
                 <div>
-                    <h1 className="font-bold text-3xl pb-4">PeakCareer</h1>
+                    <div className="flex gap-2">
+                        <figure>
+                            <img
+                                className="w-6 lg:w-10"
+                                src={jobSearch}
+                                alt="logo"
+                            />
+                        </figure>
+                        <h1 class="font-extrabold text-2xl lg:text-3xl pb-4">
+                            Work<span class="text-indigo-700">Hive</span>
+                        </h1>
+                    </div>
                     <p className="pb-6">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                     <img className="w-32" src={socialIcons} alt="social-icons" />
                 </div>

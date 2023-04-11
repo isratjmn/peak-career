@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import socialIcons from "../images/icons/socialIcons.png";
-import jobSearch from '../images/icons/jobSearch.png';
+import jobSearch from "../images/icons/jobSearch.png";
 import { Link, NavLink } from "react-router-dom";
-import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
-
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,11 +10,18 @@ const Header = () => {
 	return (
 		<div className="bg-indigo-100 container-fluid px-4 py-6 mx-auto md:px-24 lg:px-18 lg:py-6">
 			<nav className="relative flex items-center justify-between">
-
 				{/* Logo Section */}
 				<Link to="/" className="inline-flex items-center">
-					<figure><img className="w-12" src={jobSearch} alt="logo" /></figure>
-					<h1 class="font-extrabold text-3xl">Work<span class="text-indigo-700">Hive</span></h1>
+					<figure>
+						<img
+							className="w-8 lg:w-12"
+							src={jobSearch}
+							alt="logo"
+						/>
+					</figure>
+					<h1 class="font-extrabold text-2xl lg:text-3xl">
+						Work<span class="text-indigo-700">Hive</span>
+					</h1>
 				</Link>
 
 				{/* Nav Item Section */}
@@ -33,7 +39,7 @@ const Header = () => {
 					</li>
 					<li>
 						<NavLink
-							to="statistics"
+							to="/statistics"
 							title="Statistics"
 							className={({ isActive }) =>
 								isActive ? "active" : "default"
@@ -79,7 +85,7 @@ const Header = () => {
 						aria-label="open Menu"
 						onClick={() => setIsNavOpen(true)}
 					>
-						<Bars3BottomRightIcon className='w-5 text-gray-600' />
+						<Bars3BottomRightIcon className="w-5 text-gray-600" />
 					</button>
 					{isNavOpen && (
 						<div className="absolute top-0 left-0 w-full z-10">
@@ -91,9 +97,15 @@ const Header = () => {
 											to="/"
 											className="inline-flex items-center"
 										>
-											
-											<span className="ml-2 text-xl font-bold text-indigo-700 tracking-wide">
-												peakCareer
+											<figure>
+												<img
+													className="w-12"
+													src={jobSearch}
+													alt="logo"
+												/>
+											</figure>
+											<span className="ml-2 text-xl font-extrabold text-indigo-800 tracking-wide">
+												WorkHive
 											</span>
 										</Link>
 									</div>
@@ -104,7 +116,7 @@ const Header = () => {
 											title="Close Menu"
 											onClick={() => setIsNavOpen(false)}
 										>
-											<XMarkIcon className='w-5 text-gray-600' />
+											<XMarkIcon className="w-5 text-gray-600" />
 										</button>
 									</div>
 								</div>
@@ -113,12 +125,20 @@ const Header = () => {
 									<ul className="space-y-4">
 										<li>
 											<Link to="/" className="default">
-                                                Statistics
+												Home
 											</Link>
 										</li>
 										<li>
 											<Link
-												to="/books"
+												to="/statistics"
+												className="default"
+											>
+												Statistics
+											</Link>
+										</li>
+										<li>
+											<Link
+												to="/applied-jobs"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
 											>
 												Applied Jobs
@@ -126,7 +146,7 @@ const Header = () => {
 										</li>
 										<li>
 											<Link
-												to="/about"
+												to="/blog"
 												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
 											>
 												Blog
