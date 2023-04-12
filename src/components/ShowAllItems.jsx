@@ -4,6 +4,7 @@ import { MapPinIcon, CurrencyBangladeshiIcon } from "@heroicons/react/24/solid";
 
 const ShowAllItems = ({ item }) => {
 	const {
+		id,
 		companyLogo,
 		jobTitle,
 		companyName,
@@ -15,45 +16,6 @@ const ShowAllItems = ({ item }) => {
 
 	return (
 		<div className="main-container">
-			{/* <div className="p-4 grid grid-cols gap-8">
-					<div className="card sm:w-[50%] lg:w-[90%] px-12 border rounded-lg card-side bg-base-100 shadow-xl">
-						<figure>
-							<img
-								className="object-cover w-[240px] py-6 mb-0 h-[150px] rounded"
-								src={companyLogo}
-								alt="logo"
-							/>
-						</figure>
-						<div className="card-body">
-							<h2 className="card-title font-bold">{jobTitle}</h2>
-							<h2 className="text-xl font-bold">{companyName}</h2>
-							<div className="card-actions justify-start">
-								<button className="btn-remote btn-primary">
-									{remoteOrOnsite}
-								</button>
-								<button className="btn-remote btn-primary">
-									{fulltimeOrParttime}
-								</button>
-							</div>
-							<div className="flex justify-between flex-wrap">
-								<p className="text-lg py-2 font-medium">
-									Location: {location}
-								</p>
-								<p className="text-lg py-2 font-medium">
-									Salary: {salary}
-								</p>
-							</div>
-						</div>
-						<div className="card-actions items-center justify-end ml-7 mb-4">
-							<Link to="#">
-								<button className="btn-details btn-primary">
-									View Details
-								</button>
-							</Link>
-						</div>
-					</div>
-				</div> */}
-
 			<div className="grid grid-cols md:grid-cols-5 space-y-3 gap-y-4 md:gap-y-0 md:gap-4 border drop-shadow-sm p-3 md:p-5">
 				<div className="card col-span-1 min-h-[10vh] flex justify-center items-center bg-gray-200 rounded-md">
 					<img className="w-1/2" src={companyLogo} alt="" />
@@ -83,7 +45,7 @@ const ShowAllItems = ({ item }) => {
 					</div>
 				</div>
 				<div className="card-actions items-center justify-start lg:justify-end ml-2 lg:ml-7 mb-4">
-					<Link to="#">
+					<Link to={`../job-details/${id}`}>
 						<button className="btn-details btn-primary">
 							View Details
 						</button>

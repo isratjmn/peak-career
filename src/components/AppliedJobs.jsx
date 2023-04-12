@@ -4,11 +4,13 @@ import ShowAllItems from "./ShowAllItems";
 
 const AppliedJobs = () => {
 	const savedCart = useLoaderData();
-    const[data,setData]=useState(savedCart)
+    const[data,setData]=useState(savedCart);
+    console.log(data);
     let onSite=[]
     const loadOnSite = ()=>{
         for(const item of savedCart){
-            onSite= savedCart.filter((a)=>a.type=="On Site")
+            onSite= savedCart.filter((a)=>a.remoteOrOnsite=="Onsite")
+
             setData(onSite)
         }
         console.log(onSite);
@@ -16,7 +18,7 @@ const AppliedJobs = () => {
     let remote=[]
     const loadRemote = ()=>{
         for(const item of savedCart){
-            remote= savedCart.filter((a)=>a.type=="Remote")
+            remote= savedCart.filter((a)=>a.remoteOrOnsite=="Remote")
             setData(remote)
         }
         console.log(remote);
@@ -37,7 +39,7 @@ const AppliedJobs = () => {
 				</div>
 			</div>
 			
-			<div className="my-32">
+			<div className="my-32 space-y-6">
                 <div className="flex main-container mb-8 justify-center md:justify-end gap-2">
                     <button className="btn-details btn-primary">All Jobs</button>
                     <button onClick={()=>loadRemote()} className="btn-details btn-primary">Remote Jobs</button>

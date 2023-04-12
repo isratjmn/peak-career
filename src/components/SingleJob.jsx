@@ -4,10 +4,11 @@ import {
 	CurrencyBangladeshiIcon,
 	BriefcaseIcon,
 	PhoneIcon,
-	AtSymbolIcon,
 } from "@heroicons/react/24/solid";
-/* import toast from 'react-hot-toast';
-import { getAppliedList } from "../Utilities/FakeDb"; */
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const SingleJob = ({ singleJob, handleApplyNow }) => {
 	const {
@@ -27,9 +28,9 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 		email,
 	} = singleJob;
 
+	// Toast Function
 /* 	const addAppliedJobs = () => {
 		const appliedListsDb = getAppliedList();
-		// const alreadyApplied = appliedJobs.find(aj => aj.id === job.id);
 		let toastShown = false;
 		for (const id in appliedListsDb) {
 			if (id === savedCart.id && !toastShown) {
@@ -42,8 +43,10 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 			toastShown = false;
 		}
 	}; */
+
 	return (
-		<div>
+		/* Job Details Section */
+		<>
 			<div className="bg-indigo-100">
 				<div className="main-container flex flex-col lg:flex-row gap-x-10 items-center justify-between">
 					{/* Text Content */}
@@ -57,6 +60,7 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 			<div className="details-container">
 				<div className="p-4 lg:py-36 grid grid-cols-1 md:grid-cols-8 lg:gap-12">
 					<div className="col-span-5 tracking-wide text-base">
+						<img src={companyLogo} className="w-[30%] pb-6" alt="" />
 						<h2 className="pb-3">
 							<span className="font-bold text-xl">
 								Job Description:
@@ -137,15 +141,17 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 						<button
 							onClick={() => {
 								handleApplyNow(id);
+
 							}}
 							className="btn job-btn mt-4 w-full"
 						>
 							Apply Now
 						</button>
+						<ToastContainer></ToastContainer>
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
