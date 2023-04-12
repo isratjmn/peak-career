@@ -21,9 +21,7 @@ const AppliedJobs = () => {
         }
         console.log(remote);
     }
-    console.log(savedCart)
-    console.log(typeof savedCart)
-    console.log(savedCart.length)
+
 
 
 	return (
@@ -39,14 +37,14 @@ const AppliedJobs = () => {
 				</div>
 			</div>
 			
-			<div className="m-32">
+			<div className="my-32">
                 <div className="flex main-container mb-8 justify-center md:justify-end gap-2">
                     <button className="btn-details btn-primary">All Jobs</button>
                     <button onClick={()=>loadRemote()} className="btn-details btn-primary">Remote Jobs</button>
                     <button onClick={()=> loadOnSite()} className="btn-details btn-primary">Onsite Jobs</button>
                 </div>
-				{data.map((items) => (
-					<ShowAllItems key={items.id} item={items}></ShowAllItems>
+				{data.map((item) => (
+					<ShowAllItems key={item.id} item={item}></ShowAllItems>
 				))}
 			</div>
 		</div>

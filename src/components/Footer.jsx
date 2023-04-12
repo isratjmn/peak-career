@@ -4,6 +4,7 @@ import jobSearch from "../images/icons/jobSearch.png";
 
 const Footer = () => {
 	return (
+        /* Footer Section */
 		<footer className="bg-gray-900 text-white divide-y">
             <section className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:px-8 py-16 container-fluid px-4 mx-auto md:px-24 lg:px-18 lg:py-20">
                 <div>
@@ -19,7 +20,7 @@ const Footer = () => {
                             Work<span class="text-indigo-700">Hive</span>
                         </h1>
                     </div>
-                    <p className="pb-6">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
+                    <p className="pb-6 w-[90%]">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
                     <img className="w-32" src={socialIcons} alt="social-icons" />
                 </div>
                 <div>
@@ -55,7 +56,6 @@ const Footer = () => {
                     <p>524 Broadway, NYC</p>
                     <p>+1 777 - 978 - 5570</p>
                 </div>
-
             </section>
 			
 			<div

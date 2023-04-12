@@ -66,11 +66,12 @@ const Statistics = () => {
 				</div>
 			</div>
             {/* Rechart Of Assignment Marks */}
-            <div className="card mb-10 mx-auto py-20 sm:text-center sm:w-[50%] lg:max-w-2xl md:mb-12">
+			<div className="mr-4 lg:mr-0">
+			<div className="card mb-10 mx-auto py-20 sm:text-center sm:w-[50%] lg:max-w-2xl md:mb-12">
                 <ResponsiveContainer width="100%" aspect= {2}>
                     <ComposedChart
                         width={1000}
-                        height={400}
+                        height={600}
                         data={data}
                         margin={{
                             top: 20,
@@ -89,6 +90,8 @@ const Statistics = () => {
                     </ComposedChart>
                 </ResponsiveContainer>
             </div>
+			</div>
+            
 		</>
 	);
 };

@@ -16,7 +16,7 @@ const Home = () => {
 							Your Gateway <br /> to a Brighter Future: <br className="hidden md:block" />{" "}
 								<span className="inline-block text-indigo-600">With A Dream Job</span>
 							</h2>
-							<p className="text-xl lg:text-lg text-gray-800 px-3">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
+							<p className="text-xl lg:text lg:w-[80%] text-gray-800 px-3">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
 						</div>
 						<div className="flex flex-col items-center md:flex-row">
 							<Link to="#" className="btn md:w-auto md:mr-4">

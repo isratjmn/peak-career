@@ -21,7 +21,7 @@ const Blog = () => {
                         </h2>
                     </div>
                 </div>
-                <div className='max-w-screen-xl sm:mx-auto my-24'>
+                <div className='max-w-screen-xl w-[90%] mx-auto my-24'>
                     <div className="grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2">
                         <div className="space-y-8">
                             <div className='bg-indigo-200 p-8'>

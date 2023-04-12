@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MapPinIcon, CurrencyBangladeshiIcon } from "@heroicons/react/24/solid";
 
-const ShowAllItems = ({ items }) => {
+const ShowAllItems = ({ item }) => {
 	const {
 		companyLogo,
 		jobTitle,
@@ -11,7 +11,7 @@ const ShowAllItems = ({ items }) => {
 		fulltimeOrParttime,
 		location,
 		salary,
-	} = items;
+	} = item;
 
 	return (
 		<div className="main-container">
@@ -59,13 +59,13 @@ const ShowAllItems = ({ items }) => {
 					<img className="w-1/2" src={companyLogo} alt="" />
 				</div>
 				<div className="col-span-3 flex flex-col">
+					<h1 className="text-gray-500 my-1 text-2xl">{companyName}</h1>
 					<p className="font-semibold text-xl">{jobTitle}</p>
-					<p className="text-gray-500 my-1">{companyName}</p>
 					<div className="flex gap-2 py-2 my-1">
-						<button className="job-type-btn">
+						<button className="btn-remote">
 							{remoteOrOnsite}
 						</button>
-						<button className="job-type-btn">
+						<button className="btn-remote">
 							{fulltimeOrParttime}
 						</button>
 					</div>
@@ -82,7 +82,7 @@ const ShowAllItems = ({ items }) => {
 						</div>
 					</div>
 				</div>
-				<div className="card-actions items-center justify-end ml-7 mb-4">
+				<div className="card-actions items-center justify-start lg:justify-end ml-2 lg:ml-7 mb-4">
 					<Link to="#">
 						<button className="btn-details btn-primary">
 							View Details
