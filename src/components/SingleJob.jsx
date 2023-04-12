@@ -1,5 +1,13 @@
 import React from "react";
-import { MapPinIcon, CurrencyBangladeshiIcon, BriefcaseIcon, PhoneIcon, AtSymbolIcon } from '@heroicons/react/24/solid';
+import {
+	MapPinIcon,
+	CurrencyBangladeshiIcon,
+	BriefcaseIcon,
+	PhoneIcon,
+	AtSymbolIcon,
+} from "@heroicons/react/24/solid";
+/* import toast from 'react-hot-toast';
+import { getAppliedList } from "../Utilities/FakeDb"; */
 
 const SingleJob = ({ singleJob, handleApplyNow }) => {
 	const {
@@ -16,25 +24,43 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 		requirements,
 		experience,
 		phoneNumber,
-		email
+		email,
 	} = singleJob;
+
+/* 	const addAppliedJobs = () => {
+		const appliedListsDb = getAppliedList();
+		// const alreadyApplied = appliedJobs.find(aj => aj.id === job.id);
+		let toastShown = false;
+		for (const id in appliedListsDb) {
+			if (id === savedCart.id && !toastShown) {
+				toast("You have already applied 🔥");
+				toastShown = true;
+			}
+		}
+		if (!toastShown) {
+			toast("Congratulations! Application done 🆗");
+			toastShown = false;
+		}
+	}; */
 	return (
 		<div>
-            <div className="bg-indigo-100">
+			<div className="bg-indigo-100">
 				<div className="main-container flex flex-col lg:flex-row gap-x-10 items-center justify-between">
 					{/* Text Content */}
-                    <div className="pb-20 lg:mt-8 py-10 mx-auto lg:mb-0">
-                        <h2 className="mx-auto font-sans font-bold tracking-normal text-indigo-600 text-4xl lg:text-5xl sm:leading-none lg:leading-tight px-3">
-                        Job Details
-                        </h2>
-                    </div>
+					<div className="pb-20 lg:mt-8 py-10 mx-auto lg:mb-0">
+						<h2 className="mx-auto font-sans font-bold tracking-normal text-indigo-600 text-3xl lg:text-4xl sm:leading-none lg:leading-tight px-3">
+							Job Details
+						</h2>
+					</div>
 				</div>
 			</div>
 			<div className="details-container">
 				<div className="p-4 lg:py-36 grid grid-cols-1 md:grid-cols-8 lg:gap-12">
 					<div className="col-span-5 tracking-wide text-base">
 						<h2 className="pb-3">
-							<span className="font-bold text-xl">Job Description:</span>{" "}
+							<span className="font-bold text-xl">
+								Job Description:
+							</span>{" "}
 							{description}
 						</h2>
 						<h2 className="pb-3">
@@ -44,11 +70,16 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 							{responsibility}
 						</h2>
 						<h2 className="pb-3">
-							<p className="font-bold text-xl pb-1">Educational Requirements:</p>
+							<p className="font-bold text-xl pb-1">
+								Educational Requirements:
+							</p>
 							{requirements}
 						</h2>
 						<h2 className="pb-3">
-							<p className="font-bold text-xl pb-1">Experience:</p>{experience} of experience in IT Field.
+							<p className="font-bold text-xl pb-1">
+								Experience:
+							</p>
+							{experience} of experience in IT Field.
 						</h2>
 					</div>
 					<div className="col-span-3 ">
@@ -104,7 +135,9 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 							</div>
 						</div>
 						<button
-							onClick={() => handleApplyNow(id)}
+							onClick={() => {
+								handleApplyNow(id);
+							}}
 							className="btn job-btn mt-4 w-full"
 						>
 							Apply Now

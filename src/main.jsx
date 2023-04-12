@@ -16,6 +16,7 @@ import AppliedJobs from './components/AppliedJobs';
 import showData from './Loaders/showData';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
