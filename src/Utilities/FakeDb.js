@@ -18,7 +18,6 @@ const removeFromDb = (id) => {
 
 const getAppliedList = () => {
 	let appliedList = {};
-
 	// Get the Data from local storage
 	const storedAppliedList = localStorage.getItem("applied-list");
 	if (storedAppliedList) {

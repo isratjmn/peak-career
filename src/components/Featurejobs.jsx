@@ -35,7 +35,7 @@ const Featurejobs = () => {
 			{!ShowAll && (
 				<span
 					onClick={handleShowAll}
-					className="flex justify-center mb-5"
+					className="flex justify-center mb-24"
 				>
 					<button className="btn job-btn">Show More</button>
 				</span>

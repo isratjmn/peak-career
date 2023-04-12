@@ -15,7 +15,8 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 		responsibility,
 		requirements,
 		experience,
-		contactInformation
+		phoneNumber,
+		email
 	} = singleJob;
 	return (
 		<div>
@@ -84,14 +85,14 @@ const SingleJob = ({ singleJob, handleApplyNow }) => {
 									<span className="font-bold px-2">
 										Contact No:
 									</span>
-									{/* <span>{contactInformation[0].phoneNumber}</span> */}
+									<span>{phoneNumber}</span>
 								</p>
 							</div>
 							<div className="flex items-center mt-2">
 								<BriefcaseIcon className="h-5 w-5 text-indigo-500" />
 								<p className="px-2 text-sm break-normal text-gray-500">
 									<span className="font-bold">Email: </span>
-									{/* <span>{contactInformation[0].email}</span> */}
+									<span>{email}</span>
 								</p>
 							</div>
 							<div className="flex items-center mt-2">

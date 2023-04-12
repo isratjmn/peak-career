@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
 import SingleJob from "./SingleJob";
 import { addToDb } from "../Utilities/FakeDb";
 
@@ -19,7 +18,6 @@ const JobsDetails = () => {
 			.then((res) => res.json())
 			.then((job) => {
 				const selectedJobs = job.find((j) => j.id.toString() === id);
-				// console.log(selectedJobs);
 				setJobs([selectedJobs]);
 			});
 	}, [id]);
