@@ -20,6 +20,10 @@
     @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white transition duration-200 rounded shadow-md md:mb-0 bg-gradient-to-r from-purple-600 to-indigo-400 hover:bg-cyan-700
 }
 .btn-details {
-    @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white transition duration-200 rounded shadow-md md:mb-0 bg-gradient-to-r from-cyan-600 to-indigo-400 hover:bg-cyan-800
+    @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white transition duration-200 rounded shadow-md md:mb-0 bg-gradient-to-r from-purple-600 to-indigo-400 hover:bg-cyan-800
+}
+
+.btn-remote {
+    @apply inline-flex items-center h-12 px-6 mb-3 font-medium transition duration-200 rounded shadow-md md:mb-0 bg-gradient-to-r from-cyan-50 to-indigo-50 text-black border 
 }
 

@@ -30,7 +30,6 @@ const Footer = () => {
                         <li>Latest News</li>
                         <li>Careers</li>
                     </ul>
-                    
                 </div>
                 <div>
                     <h1 className="font-medium text-xl pb-4">Product</h1>

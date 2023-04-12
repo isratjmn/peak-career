@@ -13,7 +13,7 @@ import Home from './components/Home';
 import Statistics from './components/Statistics';
 import ErrorPage from './components/ErrorPage';
 import AppliedJobs from './components/AppliedJobs';
-
+import showData from './Loaders/showData';
 
 
 const router = createBrowserRouter([
@@ -41,7 +41,8 @@ const router = createBrowserRouter([
 
       {
         path: 'applied-jobs',
-        element: <AppliedJobs/>
+        element: <AppliedJobs/>,
+        loader: showData
       },
       {
         path: 'blog',

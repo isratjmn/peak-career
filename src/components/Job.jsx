@@ -19,8 +19,8 @@ const Job = ({ job }) => {
 					<h2 className="card-title font-bold">{jobTitle}</h2>
 					<h2 className="text-xl font-bold">{companyName}</h2>
 					<div className="card-actions justify-start">
-						<button className="btn btn-primary">{remoteOrOnsite}</button>
-						<button className="btn btn-primary">{fulltimeOrParttime}</button>
+						<button className="btn-remote btn-primary">{remoteOrOnsite}</button>
+						<button className="btn-remote btn-primary">{fulltimeOrParttime}</button>
 					</div>
 					<div className="flex justify-between flex-wrap">
 						<p className="text-lg py-2 font-medium">

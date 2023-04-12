@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
+import ShowAllItems from './ShowAllItems';
 
 const AppliedJobs = () => {
+    const savedCart = useLoaderData();
+    console.log(savedCart);
+
     return (
         <div>
             <div className="bg-indigo-100">
@@ -13,6 +18,16 @@ const AppliedJobs = () => {
                     </div>
 				</div>
 			</div>
+{/*             <p>{
+                savedCart.map(product => <ShowAllItems
+                key = {product.id} product= {product}
+                >
+
+                </ShowAllItems>)
+
+
+                }</p> */}
+                <p>{savedCart.length}</p>
         </div>
     );
 };

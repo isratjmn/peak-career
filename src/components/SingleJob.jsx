@@ -1,7 +1,7 @@
 import React from "react";
 import { MapPinIcon, CurrencyBangladeshiIcon, BriefcaseIcon, PhoneIcon, AtSymbolIcon } from '@heroicons/react/24/solid';
-import { addToDb } from '../components/Utilities/FakeDb';
-const SingleJob = ({ singleJob }) => {
+
+const SingleJob = ({ singleJob, handleApplyNow }) => {
 	const {
 		id,
 		companyName,
@@ -15,6 +15,7 @@ const SingleJob = ({ singleJob }) => {
 		responsibility,
 		requirements,
 		experience,
+		contactInformation
 	} = singleJob;
 	return (
 		<div>
@@ -81,16 +82,16 @@ const SingleJob = ({ singleJob }) => {
 								<PhoneIcon className="h-5 w-5 text-indigo-500" />
 								<p className="text-sm text-gray-500">
 									<span className="font-bold px-2">
-										Phone:
+										Contact No:
 									</span>
-									{/* <span>{contact_information[0].phone}</span> */}
+									{/* <span>{contactInformation[0].phoneNumber}</span> */}
 								</p>
 							</div>
 							<div className="flex items-center mt-2">
 								<BriefcaseIcon className="h-5 w-5 text-indigo-500" />
 								<p className="px-2 text-sm break-normal text-gray-500">
-									<span className="font-bold">Job: </span>
-									{/* <span>{contact_information[0].email}</span> */}
+									<span className="font-bold">Email: </span>
+									{/* <span>{contactInformation[0].email}</span> */}
 								</p>
 							</div>
 							<div className="flex items-center mt-2">
@@ -102,9 +103,7 @@ const SingleJob = ({ singleJob }) => {
 							</div>
 						</div>
 						<button
-							onClick={() => {
-								addToDb(id);
-							}}
+							onClick={() => handleApplyNow(id)}
 							className="btn job-btn mt-4 w-full"
 						>
 							Apply Now

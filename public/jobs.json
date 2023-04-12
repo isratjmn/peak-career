@@ -1,6 +1,5 @@
 
 [
-
     {
         "id": 1001,
         "companyName": "Acme Corp",
@@ -14,9 +13,12 @@
         "responsibility": "Design, develop, and maintain high-quality software using agile methodologies.",
         "requirements": "Bachelor's degree in Computer Science or related field, 5+ years of experience with Java or Python, experience with distributed systems, and strong problem-solving skills.",
         "experience": "5+ years",
-        "phoneNumber": "(555) 123-4567",
-        "email": "careers@acmecorp.com"
-        
+        "contactInformation": [
+            { 
+                "phoneNumber": "(555) 123-4567",
+                "email": "careers@acmecorp.com"
+            }
+        ]
     },
     {
         "id": 1002,
@@ -31,9 +33,12 @@
         "responsibility": "Develop and implement machine learning models, analyze and interpret large data sets.",
         "requirements": "Master's degree in Computer Science or related field, 3+ years of experience in data science, experience with Python and SQL, and strong problem-solving and communication skills.",
         "experience": "3+ years",
+        "contact_information": [
+            { 
         "phoneNumber": "(555) 345-6789",
         "email": "careers@cognitechinc.com"
-    
+            }
+        ]
     },
     {
         "id": 1003,
@@ -48,9 +53,12 @@
         "responsibility": "Develop and execute marketing strategies across multiple channels, manage a team of marketing specialists.",
         "requirements": "Bachelor's degree in Marketing or related field, 7+ years of experience in marketing, 3+ years of experience in a management role, and strong analytical and communication skills.",
         "experience": "7+ years",
+        "contact_information": [
+            { 
         "phoneNumber": "(555) 234-5678",
         "email": "jobs@netflix.com"
-
+            }
+        ]
     },
     {
         "id": 1004,
@@ -65,8 +73,12 @@
         "responsibility": "Conduct research and analysis on environmental issues, develop and implement sustainable practices.",
         "requirements": "Bachelor's or Master's degree in Environmental Science or related field, 3+ years of experience in environmental science or related field, knowledge of federal and state regulations, and strong analytical and communication skills.",
         "experience": "3+ years",
+        "contact_information": [
+            { 
         "phoneNumber": "(555) 456-7890",
         "email": "careers@ecoglobeinc.com"
+            }
+        ]
     },
     {
         "id": 1005,
@@ -81,9 +93,12 @@
         "responsibility": "Design user interfaces, conduct user research and testing, collaborate with cross-functional teams.",
         "requirements": "Bachelor's or Master's degree in Design, Human-Computer Interaction or related field, 5+ years of experience in UX design, proficiency in design software such as Sketch, Figma, or Adobe Creative Suite, and strong problem-solving and communication skills.",
         "experience": "5+ years",
-        "phoneNumber": "(555) 567-8901",
-        "email": "careers@futuretech.com"
-    
+        "contact_information": [
+            {
+            "phoneNumber": "(555) 567-8901",
+            "email": "careers@futuretech.com"
+            }
+        ]
     },
     {
         "id": 1006,
@@ -98,9 +113,11 @@
         "responsibility": "Analyze financial data, develop financial models, prepare financial reports.",
         "requirements": "Bachelor's or Master's degree in Finance, Accounting or related field, 3+ years of experience in financial analysis or related field, proficiency in financial software and tools, and strong analytical and communication skills.",
         "experience": "3+ years",
-        "phoneNumber": "(555) 678-9012",
-        "email": "careers@globalventures.com"
-        
+        "contact_information": [
+            {
+                "phoneNumber": "(555) 678-9012",
+                "email": "careers@globalventures.com"
+            }
+        ]
     }
-    
 ]

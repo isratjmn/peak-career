@@ -1,3 +1,4 @@
+// Add Data to the Local Storage
 const addToDb = (id) => {
 	let appliedList = getAppliedList();
 	const appliedOrNot = appliedList[id];
@@ -18,7 +19,7 @@ const removeFromDb = (id) => {
 const getAppliedList = () => {
 	let appliedList = {};
 
-	// get the shopping cart from local storage
+	// Get the Data from local storage
 	const storedAppliedList = localStorage.getItem("applied-list");
 	if (storedAppliedList) {
 		appliedList = JSON.parse(storedAppliedList);

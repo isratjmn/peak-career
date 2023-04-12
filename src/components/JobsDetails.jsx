@@ -2,29 +2,38 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import SingleJob from "./SingleJob";
-
+import { addToDb } from "../Utilities/FakeDb";
 
 const JobsDetails = () => {
-	const {id}  = useParams();
-    const [jobs, setJobs] = useState([]);
-    useEffect(() => {
-        fetch('/jobs.json')
+	const { id } = useParams();
+	const [jobs, setJobs] = useState([]);
+
+	// Apply Now Button Handler
+	const handleApplyNow = (id) => {
+		console.log(id);
+        addToDb(id)
+	};
+
+	useEffect(() => {
+		fetch("/jobs.json")
 			.then((res) => res.json())
 			.then((job) => {
-                const selectedJobs = job.find(j => j.id.toString() === id)
-                console.log(selectedJobs);
-                setJobs([selectedJobs])
-            }
-            );
-    }, [id]);
-	return <div>
-        {
-            jobs.map(singleJob => 
-            <SingleJob
-                key= {singleJob.id} singleJob= {singleJob}
-            ></SingleJob>)
-        }
-    </div>;
+				const selectedJobs = job.find((j) => j.id.toString() === id);
+				// console.log(selectedJobs);
+				setJobs([selectedJobs]);
+			});
+	}, [id]);
+	return (
+		<div>
+			{jobs.map((singleJob) => (
+				<SingleJob
+					key={singleJob.id}
+					singleJob={singleJob}
+					handleApplyNow={handleApplyNow}
+				></SingleJob>
+			))}
+		</div>
+	);
 };
 
 export default JobsDetails;
