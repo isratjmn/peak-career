@@ -1,7 +1,7 @@
 
 **Project Name: WorkHive**
 
-### Code Link: (https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-isratjmn)
+### Code Link: (https://github.com/isratjmn/peak-career)
 
 ### Live Website Link: (https://jocular-douhua.netlify.app/)
 
